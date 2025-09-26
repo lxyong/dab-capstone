@@ -1,0 +1,688 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20251.25.0415.1018                               -->
+<workbook original-version='18.1' source-build='2025.1.1 (20251.25.0415.1018)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column alias='Yes' caption='Has Emergency Visit' datatype='boolean' name='[Has Inpatient Visit (copy)_1247778623351054337]' param-domain-type='list' role='measure' type='nominal' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='No' />
+          <alias key='true' value='Yes' />
+        </aliases>
+        <members>
+          <member alias='Yes' value='true' />
+          <member alias='No' value='false' />
+        </members>
+      </column>
+      <column alias='Yes' caption='Has Inpatient Visit' datatype='boolean' name='[Has Outpatient Visit (copy)_1247778623350972416]' param-domain-type='list' role='measure' type='nominal' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='No' />
+          <alias key='true' value='Yes' />
+        </aliases>
+        <members>
+          <member alias='Yes' value='true' />
+          <member alias='No' value='false' />
+        </members>
+      </column>
+      <column alias='No' caption='Has Outpatient Visit' datatype='boolean' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='false'>
+        <calculation class='tableau' formula='false' />
+        <aliases>
+          <alias key='false' value='No' />
+          <alias key='true' value='Yes' />
+        </aliases>
+        <members>
+          <member alias='Yes' value='true' />
+          <member alias='No' value='false' />
+        </members>
+      </column>
+      <column alias='Yes' caption='Has Procedure Performed' datatype='boolean' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='No' />
+          <alias key='true' value='Yes' />
+        </aliases>
+        <members>
+          <member alias='Yes' value='true' />
+          <member alias='No' value='false' />
+        </members>
+      </column>
+      <column alias='Yes' caption='Prescribed Diabetes Med' datatype='boolean' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='true'>
+        <calculation class='tableau' formula='true' />
+        <aliases>
+          <alias key='false' value='No' />
+          <alias key='true' value='Yes' />
+        </aliases>
+        <members>
+          <member alias='Yes' value='true' />
+          <member alias='No' value='false' />
+        </members>
+      </column>
+      <column caption='Select Primary Diagnosis' datatype='string' name='[Parameter 4]' param-domain-type='list' role='measure' type='nominal' value='&quot;Diabetes&quot;'>
+        <calculation class='tableau' formula='&quot;Diabetes&quot;' />
+        <members>
+          <member value='&quot;Circulatory&quot;' />
+          <member value='&quot;Diabetes&quot;' />
+          <member value='&quot;Digestive&quot;' />
+          <member value='&quot;Injury&quot;' />
+          <member value='&quot;Musculoskeletal&quot;' />
+          <member value='&quot;Other&quot;' />
+          <member value='&quot;Respiratory&quot;' />
+        </members>
+      </column>
+      <column caption='Select Age Group' datatype='string' name='[Parameter 5]' param-domain-type='list' role='measure' type='nominal' value='&quot;[70-80)&quot;'>
+        <calculation class='tableau' formula='&quot;[70-80)&quot;' />
+        <members>
+          <member value='&quot;[40-50)&quot;' />
+          <member value='&quot;[50-60)&quot;' />
+          <member value='&quot;[60-70)&quot;' />
+          <member value='&quot;[70-80)&quot;' />
+          <member value='&quot;[80-90)&quot;' />
+          <member value='&quot;[90-100)&quot;' />
+        </members>
+      </column>
+      <column caption='Select Secondary Diagnosis' datatype='string' name='[Select Primary Diagnosis (copy)_1247778623351697410]' param-domain-type='list' role='measure' type='nominal' value='&quot;Injury&quot;'>
+        <calculation class='tableau' formula='&quot;Injury&quot;' />
+        <members>
+          <member value='&quot;Circulatory&quot;' />
+          <member value='&quot;Diabetes&quot;' />
+          <member value='&quot;Digestive&quot;' />
+          <member value='&quot;Injury&quot;' />
+          <member value='&quot;Musculoskeletal&quot;' />
+          <member value='&quot;Other&quot;' />
+          <member value='&quot;Respiratory&quot;' />
+        </members>
+      </column>
+      <column caption='Select Tertiary Diagnosis' datatype='string' name='[Select Secondary Diagnosis (copy)_1247778623351771139]' param-domain-type='list' role='measure' type='nominal' value='&quot;Other&quot;'>
+        <calculation class='tableau' formula='&quot;Other&quot;' />
+        <members>
+          <member value='&quot;Circulatory&quot;' />
+          <member value='&quot;Diabetes&quot;' />
+          <member value='&quot;Digestive&quot;' />
+          <member value='&quot;Injury&quot;' />
+          <member value='&quot;Musculoskeletal&quot;' />
+          <member value='&quot;Other&quot;' />
+          <member value='&quot;Respiratory&quot;' />
+        </members>
+      </column>
+      <column caption='Select Medical Specialty' datatype='string' name='[Select Tertiary Diagnosis (copy)_1247778623351934980]' param-domain-type='list' role='measure' type='nominal' value='&quot;Family/GeneralPractice&quot;'>
+        <calculation class='tableau' formula='&quot;Family/GeneralPractice&quot;' />
+        <members>
+          <member value='&quot;Cardiology&quot;' />
+          <member value='&quot;Emergency/Trauma&quot;' />
+          <member value='&quot;Family/GeneralPractice&quot;' />
+          <member value='&quot;InternalMedicine&quot;' />
+          <member value='&quot;Missing&quot;' />
+          <member value='&quot;Other&quot;' />
+          <member value='&quot;Surgery&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='pr_cleaned' inline='true' name='federated.0m921zl1ldc0xc10jx7zo10ryhul' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pr_cleaned' name='textscan.0uwvd9r06vmf411dueclj0dfmplp'>
+            <connection class='textscan' directory='C:/Users/alexk/OneDrive/Documents/Learnings/DAB/Project/Capstone/Readmission/02-Data-Prep' filename='pr_cleaned.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0uwvd9r06vmf411dueclj0dfmplp' name='pr_cleaned.csv' table='[pr_cleaned#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+            <column datatype='string' name='age' ordinal='0' />
+            <column datatype='integer' name='time_in_hospital' ordinal='1' />
+            <column datatype='integer' name='n_lab_procedures' ordinal='2' />
+            <column datatype='integer' name='n_procedures' ordinal='3' />
+            <column datatype='integer' name='n_medications' ordinal='4' />
+            <column datatype='integer' name='n_outpatient' ordinal='5' />
+            <column datatype='integer' name='n_inpatient' ordinal='6' />
+            <column datatype='integer' name='n_emergency' ordinal='7' />
+            <column datatype='string' name='medical_specialty' ordinal='8' />
+            <column datatype='string' name='diag_1' ordinal='9' />
+            <column datatype='string' name='diag_2' ordinal='10' />
+            <column datatype='string' name='diag_3' ordinal='11' />
+            <column datatype='string' name='glucose_test' ordinal='12' />
+            <column datatype='string' name='A1Ctest' ordinal='13' />
+            <column datatype='string' name='change' ordinal='14' />
+            <column datatype='string' name='diabetes_med' ordinal='15' />
+            <column datatype='string' name='readmitted' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_SG&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>age</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_in_hospital</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[time_in_hospital]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>time_in_hospital</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_lab_procedures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_lab_procedures]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>n_lab_procedures</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_procedures</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_procedures]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>n_procedures</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_medications</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_medications]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>n_medications</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_outpatient</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_outpatient]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>n_outpatient</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_inpatient</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_inpatient]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>n_inpatient</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>n_emergency</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[n_emergency]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>n_emergency</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>medical_specialty</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[medical_specialty]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>medical_specialty</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diag_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[diag_1]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>diag_1</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diag_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[diag_2]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>diag_2</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diag_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[diag_3]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>diag_3</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>glucose_test</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[glucose_test]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>glucose_test</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A1Ctest</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A1Ctest]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>A1Ctest</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>change</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[change]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>change</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diabetes_med</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[diabetes_med]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>diabetes_med</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>readmitted</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[readmitted]</local-name>
+            <parent-name>[pr_cleaned.csv]</parent-name>
+            <remote-alias>readmitted</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Prediction Readmission Risk' datatype='real' name='[Calculation_324259225298964480]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;    &quot;&#13;&#10;    import pandas as pd&#13;&#10;    import numpy as np&#13;&#10;&#13;&#10;    # Get the selected values from the Tableau parameters and fields&#13;&#10;    # Remember that each _argN is a list from Tableau, so access the first element [0]&#13;&#10;    try:&#13;&#10;        selected_age_group = _arg1[0]&#13;&#10;        has_inpatient_visit = _arg2[0] # Boolean&#13;&#10;        has_outpatient_visit = _arg3[0] # Boolean&#13;&#10;        has_emergency_visit = _arg4[0] # Boolean&#13;&#10;        has_procedure_performed = _arg5[0] # Boolean&#13;&#10;        prescribed_diabetes_med = _arg6[0] # Boolean&#13;&#10;        selected_medical_specialty = _arg7[0] # String from List parameter&#13;&#10;        selected_diag_1 = _arg8[0] [0] # String from List parameter - Added [0] here as well, in case it&apos;s nested&#13;&#10;        selected_diag_2 = _arg9[0] [0] # String from List parameter - Added [0] here as well&#13;&#10;        selected_diag_3 = _arg10[0] [0] # String from List parameter - Added [0] here as well&#13;&#10;        # Assuming _arg11 onwards are other necessary feature fields from your data source&#13;&#10;&#13;&#10;        # Print input values for debugging&#13;&#10;        print(f&apos;Input received: age_group={selected_age_group}, inpatient={has_inpatient_visit}, outpatient={has_outpatient_visit}, emergency={has_emergency_visit}, procedure={has_procedure_performed}, diabetes_med={prescribed_diabetes_med}, medical_specialty={selected_medical_specialty}, diag_1={selected_diag_1}, diag_2={selected_diag_2}, diag_3={selected_diag_3}&apos;)&#13;&#10;&#13;&#10;    except Exception as e:&#13;&#10;        print(f&apos;Error receiving input data from Tableau: {e}&apos;)&#13;&#10;        # Return a list of None or a default value to indicate an error&#13;&#10;        return [None] * len(_arg1) # Assuming _arg1 is always present&#13;&#10;&#13;&#10;    # Create a dictionary to hold the data for the DataFrame&#13;&#10;    # Initialize with default values (0 for one-hot encoded, False for boolean)&#13;&#10;    data = {&#13;&#10;        &apos;age_[50-60)&apos;: 0&#13;&#10;        ,&apos;age_[60-70)&apos;: 0&#13;&#10;        , &apos;age_[70-80)&apos;: 0&#13;&#10;        , &apos;age_[80-90)&apos;: 0&#13;&#10;        , &apos;age_[90-100)&apos;: 0,&#13;&#10;&#13;&#10;        &apos;has_inpatient_visit&apos;: has_inpatient_visit,&#13;&#10;        &apos;has_outpatient_visit&apos;: has_outpatient_visit,&#13;&#10;        &apos;has_emergency_visit&apos;: has_emergency_visit,&#13;&#10;        &apos;has_procedure_performed&apos;: has_procedure_performed,&#13;&#10;        &apos;diabetes_med_yes&apos;: prescribed_diabetes_med, # Mapping parameter name to feature name&#13;&#10;&#13;&#10;        # Initialize one-hot encoded columns for medical_specialty, diag_1, diag_2, diag_3 to 0&#13;&#10;        # You&apos;ll need to list all possible values from your training data here&#13;&#10;        &apos;medical_specialty_Emergency/Trauma&apos;: 0,&#13;&#10;        &apos;medical_specialty_Family/GeneralPractice&apos;: 0,&#13;&#10;        &apos;medical_specialty_InternalMedicine&apos;: 0,&#13;&#10;        &apos;medical_specialty_Missing&apos;: 0, # Include if you kept &apos;Missing&apos; in your model&#13;&#10;        &apos;medical_specialty_Other&apos;: 0,&#13;&#10;        &apos;medical_specialty_Surgery&apos;: 0,&#13;&#10;        # ... add all other medical_specialty one-hot encoded columns&#13;&#10;&#13;&#10;        &apos;diag_1_Diabetes&apos;: 0, &apos;diag_1_Digestive&apos;: 0, &apos;diag_1_Injury&apos;: 0&#13;&#10;        , &apos;diag_1_Musculoskeletal&apos;: 0, &apos;diag_1_Other&apos;: 0, &apos;diag_1_Respiratory&apos;: 0,&#13;&#10;&#13;&#10;        &apos;diag_2_Diabetes&apos;: 0, &apos;diag_2_Digestive&apos;: 0, &apos;diag_2_Injury&apos;: 0,&#13;&#10;        &apos;diag_2_Musculoskeletal&apos;: 0, &apos;diag_2_Other&apos;: 0, &apos;diag_2_Respiratory&apos;: 0,&#13;&#10;&#13;&#10;        &apos;diag_3_Diabetes&apos;: 0, &apos;diag_3_Digestive&apos;: 0, &apos;diag_3_Injury&apos;: 0,&#13;&#10;        &apos;diag_3_Musculoskeletal&apos;: 0, &apos;diag_3_Other&apos;: 0, &apos;diag_3_Respiratory&apos;: 0,&#13;&#10;        # ... add all other diag_3 one-hot encoded columns&#13;&#10;&#13;&#10;        # ... include any other feature columns from your Tableau data source if needed&#13;&#10;        # e.g., &apos;time_in_hospital&apos;: _arg11 # Assuming time_in_hospital is _arg11&#13;&#10;    }&#13;&#10;&#13;&#10;    # Perform one-hot encoding based on the selected parameter values&#13;&#10;    if selected_age_group in data:&#13;&#10;        data[selected_age_group] = 1&#13;&#10;&#13;&#10;    # For medical_specialty, diag_1, diag_2, diag_3, you need to map the selected string value&#13;&#10;    # from the parameter to the corresponding one-hot encoded column name.&#13;&#10;    # This requires knowing how the strings in your Tableau List parameters&#13;&#10;    # map to the column names created by pd.get_dummies.&#13;&#10;    # Example mapping (adjust based on your actual column names):&#13;&#10;    medical_specialty_col = &apos;medical_specialty_&apos; + selected_medical_specialty.replace(&apos; &apos;, &apos;&apos;).replace(&apos;/&apos;, &apos;&apos;) # Example: &apos;Emergency/Trauma&apos; -&gt; &apos;medical_specialty_EmergencyTrauma&apos;&#13;&#10;    if medical_specialty_col in data:&#13;&#10;        data[medical_specialty_col] = 1&#13;&#10;&#13;&#10;    diag_1_col = &apos;diag_1_&apos; + selected_diag_1.replace(&apos; &apos;, &apos;&apos;).replace(&apos;/&apos;, &apos;&apos;) # Example: &apos;Diabetes&apos; -&gt; &apos;diag_1_Diabetes&apos;&#13;&#10;    if diag_1_col in data:&#13;&#10;        data[diag_1_col] = 1&#13;&#10;&#13;&#10;    diag_2_col = &apos;diag_2_&apos; + selected_diag_2.replace(&apos; &apos;, &apos;&apos;).replace(&apos;/&apos;, &apos;&apos;) # Example: &apos;Digestive&apos; -&gt; &apos;diag_2_Digestive&apos;&#13;&#10;    if diag_2_col in data:&#13;&#10;        data[diag_2_col] = 1&#13;&#10;&#13;&#10;    diag_3_col = &apos;diag_3_&apos; + selected_diag_3.replace(&apos; &apos;, &apos;&apos;).replace(&apos;/&apos;, &apos;&apos;) # Example: &apos;Injury&apos; -&gt; &apos;diag_3_Injury&apos;&#13;&#10;    if diag_3_col in data:&#13;&#10;        data[diag_3_col] = 1&#13;&#10;&#13;&#10;&#13;&#10;    # Ensure the column order matches your model_features list exactly!&#13;&#10;    # This list MUST match the `model_features` list in your TabPy script.&#13;&#10;    column_order = [&#13;&#10;        &apos;age_[50-60)&apos;, &apos;age_[60-70)&apos;, &apos;age_[70-80)&apos;, &apos;age_[80-90)&apos;, &apos;age_[90-100)&apos;,&#13;&#10;        &apos;diabetes_med_yes&apos;, &apos;has_procedure_performed&apos;,&#13;&#10;        &apos;has_outpatient_visit&apos;, &apos;has_inpatient_visit&apos;, &apos;has_emergency_visit&apos;,&#13;&#10;        &apos;diag_1_Diabetes&apos;, &apos;diag_1_Digestive&apos;, &apos;diag_1_Injury&apos;, &apos;diag_1_Musculoskeletal&apos;, &apos;diag_1_Other&apos;, &apos;diag_1_Respiratory&apos;,&#13;&#10;        &apos;diag_2_Diabetes&apos;, &apos;diag_2_Digestive&apos;, &apos;diag_2_Injury&apos;, &apos;diag_2_Musculoskeletal&apos;, &apos;diag_2_Other&apos;, &apos;diag_2_Respiratory&apos;,&#13;&#10;        &apos;diag_3_Diabetes&apos;, &apos;diag_3_Digestive&apos;, &apos;diag_3_Injury&apos;, &apos;diag_3_Musculoskeletal&apos;, &apos;diag_3_Other&apos;, &apos;diag_3_Respiratory&apos;,&#13;&#10;        &apos;medical_specialty_Emergency/Trauma&apos;, &apos;medical_specialty_Family/GeneralPractice&apos;,&#13;&#10;        &apos;medical_specialty_InternalMedicine&apos;, &apos;medical_specialty_Missing&apos;, # Include if applicable&#13;&#10;        &apos;medical_specialty_Other&apos;, &apos;medical_specialty_Surgery&apos;&#13;&#10;        # ... add any other features in the correct order&#13;&#10;    ]&#13;&#10;    input_df = pd.DataFrame([data], columns=column_order) # Use [data] to create a single row DataFrame&#13;&#10;&#13;&#10;    # Print the input DataFrame for debugging&#13;&#10;    print(f&apos;Input DataFrame to model:\n{input_df}&apos;)&#13;&#10;&#13;&#10;    # Extract values from the DataFrame into a list for JSON serialization&#13;&#10;    input_list = input_df.values.tolist()&#13;&#10;&#13;&#10;    # Call the deployed TabPy function with the list&#13;&#10;    result = tabpy.query(&apos;ReadmissionRiskPredictor&apos;, input_list)[&apos;response&apos;]&#13;&#10;    print(f&apos;Prediction result: {result}&apos;)&#13;&#10;    return result&#13;&#10;    &quot;,&#13;&#10;    // Now, list the Tableau fields and parameters that correspond to _arg1, _arg2, etc.&#13;&#10;    // The order here MUST match the order you used to access _argN above.&#13;&#10;    [Parameters].[Parameter 5],&#13;&#10;    [Parameters].[Has Outpatient Visit (copy)_1247778623350972416],&#13;&#10;    [Parameters].[Parameter 1],&#13;&#10;    [Parameters].[Has Inpatient Visit (copy)_1247778623351054337],&#13;&#10;    [Parameters].[Parameter 2],&#13;&#10;    [Parameters].[Parameter 3],&#13;&#10;    [Parameters].[Select Tertiary Diagnosis (copy)_1247778623351934980],&#13;&#10;    [Parameters].[Parameter 4],&#13;&#10;    [Parameters].[Select Primary Diagnosis (copy)_1247778623351697410],&#13;&#10;    [Parameters].[Select Secondary Diagnosis (copy)_1247778623351771139]&#13;&#10;)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='pr_cleaned.csv' datatype='table' name='[__tableau_internal_object_id__].[pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524]' role='measure' type='quantitative' />
+      <column caption='Age' datatype='string' name='[age]' role='dimension' type='nominal' />
+      <column caption='Change' datatype='string' name='[change]' role='dimension' type='nominal' />
+      <column caption='Diabetes Med' datatype='string' name='[diabetes_med]' role='dimension' type='nominal' />
+      <column caption='Diag 1' datatype='string' name='[diag_1]' role='dimension' type='nominal' />
+      <column caption='Diag 2' datatype='string' name='[diag_2]' role='dimension' type='nominal' />
+      <column caption='Diag 3' datatype='string' name='[diag_3]' role='dimension' type='nominal' />
+      <column caption='Glucose Test' datatype='string' name='[glucose_test]' role='dimension' type='nominal' />
+      <column caption='Medical Specialty' datatype='string' name='[medical_specialty]' role='dimension' type='nominal' />
+      <column caption='N Emergency' datatype='integer' name='[n_emergency]' role='measure' type='quantitative' />
+      <column caption='N Inpatient' datatype='integer' name='[n_inpatient]' role='measure' type='quantitative' />
+      <column caption='N Lab Procedures' datatype='integer' name='[n_lab_procedures]' role='measure' type='quantitative' />
+      <column caption='N Medications' datatype='integer' name='[n_medications]' role='measure' type='quantitative' />
+      <column caption='N Outpatient' datatype='integer' name='[n_outpatient]' role='measure' type='quantitative' />
+      <column caption='N Procedures' datatype='integer' name='[n_procedures]' role='measure' type='quantitative' />
+      <column caption='Readmitted' datatype='string' name='[readmitted]' role='dimension' type='nominal' />
+      <column caption='Time In Hospital' datatype='integer' name='[time_in_hospital]' role='measure' type='quantitative' />
+      <layout common-percentage='0.650997' dim-ordering='alphabetic' measure-ordering='alphabetic' parameter-percentage='0.349003' show-structure='true' user-set-layout-v2='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column alias='Yes' caption='Has Emergency Visit' datatype='boolean' name='[Has Inpatient Visit (copy)_1247778623351054337]' param-domain-type='list' role='measure' type='nominal' value='true'>
+          <calculation class='tableau' formula='true' />
+          <aliases>
+            <alias key='false' value='No' />
+            <alias key='true' value='Yes' />
+          </aliases>
+        </column>
+        <column alias='Yes' caption='Has Inpatient Visit' datatype='boolean' name='[Has Outpatient Visit (copy)_1247778623350972416]' param-domain-type='list' role='measure' type='nominal' value='true'>
+          <calculation class='tableau' formula='true' />
+          <aliases>
+            <alias key='false' value='No' />
+            <alias key='true' value='Yes' />
+          </aliases>
+        </column>
+        <column alias='No' caption='Has Outpatient Visit' datatype='boolean' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='false'>
+          <calculation class='tableau' formula='false' />
+          <aliases>
+            <alias key='false' value='No' />
+            <alias key='true' value='Yes' />
+          </aliases>
+        </column>
+        <column alias='Yes' caption='Has Procedure Performed' datatype='boolean' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='true'>
+          <calculation class='tableau' formula='true' />
+          <aliases>
+            <alias key='false' value='No' />
+            <alias key='true' value='Yes' />
+          </aliases>
+        </column>
+        <column alias='Yes' caption='Prescribed Diabetes Med' datatype='boolean' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='true'>
+          <calculation class='tableau' formula='true' />
+          <aliases>
+            <alias key='false' value='No' />
+            <alias key='true' value='Yes' />
+          </aliases>
+        </column>
+        <column caption='Select Primary Diagnosis' datatype='string' name='[Parameter 4]' param-domain-type='list' role='measure' type='nominal' value='&quot;Diabetes&quot;'>
+          <calculation class='tableau' formula='&quot;Diabetes&quot;' />
+        </column>
+        <column caption='Select Age Group' datatype='string' name='[Parameter 5]' param-domain-type='list' role='measure' type='nominal' value='&quot;[70-80)&quot;'>
+          <calculation class='tableau' formula='&quot;[70-80)&quot;' />
+        </column>
+        <column caption='Select Secondary Diagnosis' datatype='string' name='[Select Primary Diagnosis (copy)_1247778623351697410]' param-domain-type='list' role='measure' type='nominal' value='&quot;Injury&quot;'>
+          <calculation class='tableau' formula='&quot;Injury&quot;' />
+        </column>
+        <column caption='Select Tertiary Diagnosis' datatype='string' name='[Select Secondary Diagnosis (copy)_1247778623351771139]' param-domain-type='list' role='measure' type='nominal' value='&quot;Other&quot;'>
+          <calculation class='tableau' formula='&quot;Other&quot;' />
+        </column>
+        <column caption='Select Medical Specialty' datatype='string' name='[Select Tertiary Diagnosis (copy)_1247778623351934980]' param-domain-type='list' role='measure' type='nominal' value='&quot;Family/GeneralPractice&quot;'>
+          <calculation class='tableau' formula='&quot;Family/GeneralPractice&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='pr_cleaned.csv' id='pr_cleaned.csv_31C240BBBD434F59B6C153CA5C71F524'>
+            <properties context=''>
+              <relation connection='textscan.0uwvd9r06vmf411dueclj0dfmplp' name='pr_cleaned.csv' table='[pr_cleaned#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_SG' separator=','>
+                  <column datatype='string' name='age' ordinal='0' />
+                  <column datatype='integer' name='time_in_hospital' ordinal='1' />
+                  <column datatype='integer' name='n_lab_procedures' ordinal='2' />
+                  <column datatype='integer' name='n_procedures' ordinal='3' />
+                  <column datatype='integer' name='n_medications' ordinal='4' />
+                  <column datatype='integer' name='n_outpatient' ordinal='5' />
+                  <column datatype='integer' name='n_inpatient' ordinal='6' />
+                  <column datatype='integer' name='n_emergency' ordinal='7' />
+                  <column datatype='string' name='medical_specialty' ordinal='8' />
+                  <column datatype='string' name='diag_1' ordinal='9' />
+                  <column datatype='string' name='diag_2' ordinal='10' />
+                  <column datatype='string' name='diag_3' ordinal='11' />
+                  <column datatype='string' name='glucose_test' ordinal='12' />
+                  <column datatype='string' name='A1Ctest' ordinal='13' />
+                  <column datatype='string' name='change' ordinal='14' />
+                  <column datatype='string' name='diabetes_med' ordinal='15' />
+                  <column datatype='string' name='readmitted' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Prediction'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pr_cleaned' name='federated.0m921zl1ldc0xc10jx7zo10ryhul' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column alias='Yes' caption='Has Emergency Visit' datatype='boolean' name='[Has Inpatient Visit (copy)_1247778623351054337]' param-domain-type='list' role='measure' type='nominal' value='true'>
+              <calculation class='tableau' formula='true' />
+              <aliases>
+                <alias key='false' value='No' />
+                <alias key='true' value='Yes' />
+              </aliases>
+            </column>
+            <column alias='Yes' caption='Has Inpatient Visit' datatype='boolean' name='[Has Outpatient Visit (copy)_1247778623350972416]' param-domain-type='list' role='measure' type='nominal' value='true'>
+              <calculation class='tableau' formula='true' />
+              <aliases>
+                <alias key='false' value='No' />
+                <alias key='true' value='Yes' />
+              </aliases>
+            </column>
+            <column alias='No' caption='Has Outpatient Visit' datatype='boolean' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='false'>
+              <calculation class='tableau' formula='false' />
+              <aliases>
+                <alias key='false' value='No' />
+                <alias key='true' value='Yes' />
+              </aliases>
+            </column>
+            <column alias='Yes' caption='Has Procedure Performed' datatype='boolean' name='[Parameter 2]' param-domain-type='list' role='measure' type='nominal' value='true'>
+              <calculation class='tableau' formula='true' />
+              <aliases>
+                <alias key='false' value='No' />
+                <alias key='true' value='Yes' />
+              </aliases>
+            </column>
+            <column alias='Yes' caption='Prescribed Diabetes Med' datatype='boolean' name='[Parameter 3]' param-domain-type='list' role='measure' type='nominal' value='true'>
+              <calculation class='tableau' formula='true' />
+              <aliases>
+                <alias key='false' value='No' />
+                <alias key='true' value='Yes' />
+              </aliases>
+            </column>
+            <column caption='Select Primary Diagnosis' datatype='string' name='[Parameter 4]' param-domain-type='list' role='measure' type='nominal' value='&quot;Diabetes&quot;'>
+              <calculation class='tableau' formula='&quot;Diabetes&quot;' />
+            </column>
+            <column caption='Select Age Group' datatype='string' name='[Parameter 5]' param-domain-type='list' role='measure' type='nominal' value='&quot;[70-80)&quot;'>
+              <calculation class='tableau' formula='&quot;[70-80)&quot;' />
+            </column>
+            <column caption='Select Secondary Diagnosis' datatype='string' name='[Select Primary Diagnosis (copy)_1247778623351697410]' param-domain-type='list' role='measure' type='nominal' value='&quot;Injury&quot;'>
+              <calculation class='tableau' formula='&quot;Injury&quot;' />
+            </column>
+            <column caption='Select Tertiary Diagnosis' datatype='string' name='[Select Secondary Diagnosis (copy)_1247778623351771139]' param-domain-type='list' role='measure' type='nominal' value='&quot;Other&quot;'>
+              <calculation class='tableau' formula='&quot;Other&quot;' />
+            </column>
+            <column caption='Select Medical Specialty' datatype='string' name='[Select Tertiary Diagnosis (copy)_1247778623351934980]' param-domain-type='list' role='measure' type='nominal' value='&quot;Family/GeneralPractice&quot;'>
+              <calculation class='tableau' formula='&quot;Family/GeneralPractice&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.0m921zl1ldc0xc10jx7zo10ryhul'>
+            <column caption='Prediction Readmission Risk' datatype='real' name='[Calculation_324259225298964480]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SCRIPT_REAL(&#13;&#10;    &quot;&#13;&#10;    import pandas as pd&#13;&#10;    import numpy as np&#13;&#10;&#13;&#10;    # Get the selected values from the Tableau parameters and fields&#13;&#10;    # Remember that each _argN is a list from Tableau, so access the first element [0]&#13;&#10;    try:&#13;&#10;        selected_age_group = _arg1[0]&#13;&#10;        has_inpatient_visit = _arg2[0] # Boolean&#13;&#10;        has_outpatient_visit = _arg3[0] # Boolean&#13;&#10;        has_emergency_visit = _arg4[0] # Boolean&#13;&#10;        has_procedure_performed = _arg5[0] # Boolean&#13;&#10;        prescribed_diabetes_med = _arg6[0] # Boolean&#13;&#10;        selected_medical_specialty = _arg7[0] # String from List parameter&#13;&#10;        selected_diag_1 = _arg8[0] [0] # String from List parameter - Added [0] here as well, in case it&apos;s nested&#13;&#10;        selected_diag_2 = _arg9[0] [0] # String from List parameter - Added [0] here as well&#13;&#10;        selected_diag_3 = _arg10[0] [0] # String from List parameter - Added [0] here as well&#13;&#10;        # Assuming _arg11 onwards are other necessary feature fields from your data source&#13;&#10;&#13;&#10;        # Print input values for debugging&#13;&#10;        print(f&apos;Input received: age_group={selected_age_group}, inpatient={has_inpatient_visit}, outpatient={has_outpatient_visit}, emergency={has_emergency_visit}, procedure={has_procedure_performed}, diabetes_med={prescribed_diabetes_med}, medical_specialty={selected_medical_specialty}, diag_1={selected_diag_1}, diag_2={selected_diag_2}, diag_3={selected_diag_3}&apos;)&#13;&#10;&#13;&#10;    except Exception as e:&#13;&#10;        print(f&apos;Error receiving input data from Tableau: {e}&apos;)&#13;&#10;        # Return a list of None or a default value to indicate an error&#13;&#10;        return [None] * len(_arg1) # Assuming _arg1 is always present&#13;&#10;&#13;&#10;    # Create a dictionary to hold the data for the DataFrame&#13;&#10;    # Initialize with default values (0 for one-hot encoded, False for boolean)&#13;&#10;    data = {&#13;&#10;        &apos;age_[50-60)&apos;: 0&#13;&#10;        ,&apos;age_[60-70)&apos;: 0&#13;&#10;        , &apos;age_[70-80)&apos;: 0&#13;&#10;        , &apos;age_[80-90)&apos;: 0&#13;&#10;        , &apos;age_[90-100)&apos;: 0,&#13;&#10;&#13;&#10;        &apos;has_inpatient_visit&apos;: has_inpatient_visit,&#13;&#10;        &apos;has_outpatient_visit&apos;: has_outpatient_visit,&#13;&#10;        &apos;has_emergency_visit&apos;: has_emergency_visit,&#13;&#10;        &apos;has_procedure_performed&apos;: has_procedure_performed,&#13;&#10;        &apos;diabetes_med_yes&apos;: prescribed_diabetes_med, # Mapping parameter name to feature name&#13;&#10;&#13;&#10;        # Initialize one-hot encoded columns for medical_specialty, diag_1, diag_2, diag_3 to 0&#13;&#10;        # You&apos;ll need to list all possible values from your training data here&#13;&#10;        &apos;medical_specialty_Emergency/Trauma&apos;: 0,&#13;&#10;        &apos;medical_specialty_Family/GeneralPractice&apos;: 0,&#13;&#10;        &apos;medical_specialty_InternalMedicine&apos;: 0,&#13;&#10;        &apos;medical_specialty_Missing&apos;: 0, # Include if you kept &apos;Missing&apos; in your model&#13;&#10;        &apos;medical_specialty_Other&apos;: 0,&#13;&#10;        &apos;medical_specialty_Surgery&apos;: 0,&#13;&#10;        # ... add all other medical_specialty one-hot encoded columns&#13;&#10;&#13;&#10;        &apos;diag_1_Diabetes&apos;: 0, &apos;diag_1_Digestive&apos;: 0, &apos;diag_1_Injury&apos;: 0&#13;&#10;        , &apos;diag_1_Musculoskeletal&apos;: 0, &apos;diag_1_Other&apos;: 0, &apos;diag_1_Respiratory&apos;: 0,&#13;&#10;&#13;&#10;        &apos;diag_2_Diabetes&apos;: 0, &apos;diag_2_Digestive&apos;: 0, &apos;diag_2_Injury&apos;: 0,&#13;&#10;        &apos;diag_2_Musculoskeletal&apos;: 0, &apos;diag_2_Other&apos;: 0, &apos;diag_2_Respiratory&apos;: 0,&#13;&#10;&#13;&#10;        &apos;diag_3_Diabetes&apos;: 0, &apos;diag_3_Digestive&apos;: 0, &apos;diag_3_Injury&apos;: 0,&#13;&#10;        &apos;diag_3_Musculoskeletal&apos;: 0, &apos;diag_3_Other&apos;: 0, &apos;diag_3_Respiratory&apos;: 0,&#13;&#10;        # ... add all other diag_3 one-hot encoded columns&#13;&#10;&#13;&#10;        # ... include any other feature columns from your Tableau data source if needed&#13;&#10;        # e.g., &apos;time_in_hospital&apos;: _arg11 # Assuming time_in_hospital is _arg11&#13;&#10;    }&#13;&#10;&#13;&#10;    # Perform one-hot encoding based on the selected parameter values&#13;&#10;    if selected_age_group in data:&#13;&#10;        data[selected_age_group] = 1&#13;&#10;&#13;&#10;    # For medical_specialty, diag_1, diag_2, diag_3, you need to map the selected string value&#13;&#10;    # from the parameter to the corresponding one-hot encoded column name.&#13;&#10;    # This requires knowing how the strings in your Tableau List parameters&#13;&#10;    # map to the column names created by pd.get_dummies.&#13;&#10;    # Example mapping (adjust based on your actual column names):&#13;&#10;    medical_specialty_col = &apos;medical_specialty_&apos; + selected_medical_specialty.replace(&apos; &apos;, &apos;&apos;).replace(&apos;/&apos;, &apos;&apos;) # Example: &apos;Emergency/Trauma&apos; -&gt; &apos;medical_specialty_EmergencyTrauma&apos;&#13;&#10;    if medical_specialty_col in data:&#13;&#10;        data[medical_specialty_col] = 1&#13;&#10;&#13;&#10;    diag_1_col = &apos;diag_1_&apos; + selected_diag_1.replace(&apos; &apos;, &apos;&apos;).replace(&apos;/&apos;, &apos;&apos;) # Example: &apos;Diabetes&apos; -&gt; &apos;diag_1_Diabetes&apos;&#13;&#10;    if diag_1_col in data:&#13;&#10;        data[diag_1_col] = 1&#13;&#10;&#13;&#10;    diag_2_col = &apos;diag_2_&apos; + selected_diag_2.replace(&apos; &apos;, &apos;&apos;).replace(&apos;/&apos;, &apos;&apos;) # Example: &apos;Digestive&apos; -&gt; &apos;diag_2_Digestive&apos;&#13;&#10;    if diag_2_col in data:&#13;&#10;        data[diag_2_col] = 1&#13;&#10;&#13;&#10;    diag_3_col = &apos;diag_3_&apos; + selected_diag_3.replace(&apos; &apos;, &apos;&apos;).replace(&apos;/&apos;, &apos;&apos;) # Example: &apos;Injury&apos; -&gt; &apos;diag_3_Injury&apos;&#13;&#10;    if diag_3_col in data:&#13;&#10;        data[diag_3_col] = 1&#13;&#10;&#13;&#10;&#13;&#10;    # Ensure the column order matches your model_features list exactly!&#13;&#10;    # This list MUST match the `model_features` list in your TabPy script.&#13;&#10;    column_order = [&#13;&#10;        &apos;age_[50-60)&apos;, &apos;age_[60-70)&apos;, &apos;age_[70-80)&apos;, &apos;age_[80-90)&apos;, &apos;age_[90-100)&apos;,&#13;&#10;        &apos;diabetes_med_yes&apos;, &apos;has_procedure_performed&apos;,&#13;&#10;        &apos;has_outpatient_visit&apos;, &apos;has_inpatient_visit&apos;, &apos;has_emergency_visit&apos;,&#13;&#10;        &apos;diag_1_Diabetes&apos;, &apos;diag_1_Digestive&apos;, &apos;diag_1_Injury&apos;, &apos;diag_1_Musculoskeletal&apos;, &apos;diag_1_Other&apos;, &apos;diag_1_Respiratory&apos;,&#13;&#10;        &apos;diag_2_Diabetes&apos;, &apos;diag_2_Digestive&apos;, &apos;diag_2_Injury&apos;, &apos;diag_2_Musculoskeletal&apos;, &apos;diag_2_Other&apos;, &apos;diag_2_Respiratory&apos;,&#13;&#10;        &apos;diag_3_Diabetes&apos;, &apos;diag_3_Digestive&apos;, &apos;diag_3_Injury&apos;, &apos;diag_3_Musculoskeletal&apos;, &apos;diag_3_Other&apos;, &apos;diag_3_Respiratory&apos;,&#13;&#10;        &apos;medical_specialty_Emergency/Trauma&apos;, &apos;medical_specialty_Family/GeneralPractice&apos;,&#13;&#10;        &apos;medical_specialty_InternalMedicine&apos;, &apos;medical_specialty_Missing&apos;, # Include if applicable&#13;&#10;        &apos;medical_specialty_Other&apos;, &apos;medical_specialty_Surgery&apos;&#13;&#10;        # ... add any other features in the correct order&#13;&#10;    ]&#13;&#10;    input_df = pd.DataFrame([data], columns=column_order) # Use [data] to create a single row DataFrame&#13;&#10;&#13;&#10;    # Print the input DataFrame for debugging&#13;&#10;    print(f&apos;Input DataFrame to model:\n{input_df}&apos;)&#13;&#10;&#13;&#10;    # Extract values from the DataFrame into a list for JSON serialization&#13;&#10;    input_list = input_df.values.tolist()&#13;&#10;&#13;&#10;    # Call the deployed TabPy function with the list&#13;&#10;    result = tabpy.query(&apos;ReadmissionRiskPredictor&apos;, input_list)[&apos;response&apos;]&#13;&#10;    print(f&apos;Prediction result: {result}&apos;)&#13;&#10;    return result&#13;&#10;    &quot;,&#13;&#10;    // Now, list the Tableau fields and parameters that correspond to _arg1, _arg2, etc.&#13;&#10;    // The order here MUST match the order you used to access _argN above.&#13;&#10;    [Parameters].[Parameter 5],&#13;&#10;    [Parameters].[Has Outpatient Visit (copy)_1247778623350972416],&#13;&#10;    [Parameters].[Parameter 1],&#13;&#10;    [Parameters].[Has Inpatient Visit (copy)_1247778623351054337],&#13;&#10;    [Parameters].[Parameter 2],&#13;&#10;    [Parameters].[Parameter 3],&#13;&#10;    [Parameters].[Select Tertiary Diagnosis (copy)_1247778623351934980],&#13;&#10;    [Parameters].[Parameter 4],&#13;&#10;    [Parameters].[Select Primary Diagnosis (copy)_1247778623351697410],&#13;&#10;    [Parameters].[Select Secondary Diagnosis (copy)_1247778623351771139]&#13;&#10;)'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column-instance column='[Calculation_324259225298964480]' derivation='User' name='[usr:Calculation_324259225298964480:qk:1]' pivot='key' type='quantitative'>
+              <table-calc ordering-field='' ordering-type='Field' />
+            </column-instance>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0m921zl1ldc0xc10jx7zo10ryhul].[usr:Calculation_324259225298964480:qk:1]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7FA3B09A-FC36-4868-9C07-C62F605D60EF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='37'>
+    <window class='worksheet' maximized='true' name='Prediction'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='300'>
+            <card mode='compact' param='[Parameters].[Parameter 5]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Select Tertiary Diagnosis (copy)_1247778623351934980]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Parameter 4]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Select Primary Diagnosis (copy)_1247778623351697410]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Select Secondary Diagnosis (copy)_1247778623351771139]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Has Inpatient Visit (copy)_1247778623351054337]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Has Outpatient Visit (copy)_1247778623350972416]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Parameter 2]' type='parameter' />
+            <card mode='compact' param='[Parameters].[Parameter 3]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{44FF43F4-71E1-49A8-A717-0BCD85A3D838}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='25' name='Prediction' width='64'>
+      iVBORw0KGgoAAAANSUhEUgAAAEAAAAAZCAYAAACB6CjhAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAEYElEQVRYhe2ZQUgbWxiFv8a0NTNiiTQxlTagGKy0uBoCIUhbo2DTjagroYuI4EYpyJBa
+      cOEiqW1IycKdBHFbuuimC0spLbTLFsQWGm20JUhJghhNyGDGkLyFMO/NM77Cy2IW9cBs/nvP
+      /c899/Bv5ly1Wq3yB8NktACjcWaA0QKMxpkBRgswGmcGGC3AaJwZYLQAo3FmgNECjMaZAUYL
+      MBp1G6AoCuFwGI/Hg8fjIRwOoyjKb3mFQoHHjx/j9Xpxu92Mjo7y6dMnbT0ej9PX14ckSfT1
+      9RGPx1FVteZZm5ubDAwMEAgEKBaLWj2bzeL3+5EkSffNzs5qe8x13J1yuUwkEuHo6Ii3b98C
+      EA6HiUQizM3NYTbXPj6fz/Pw4UN6enp48+YNjY2NbGxssLu7C0ClUmFtbY2VlRWcTiepVIpI
+      JEKhUODBgweYTH+/m6qqxONxBgcH+fHjh65POp3mxo0bvHz5kosXL9bUUlcCkskkmUwGWZYR
+      BAFBEJBlmUwmQzKZPJX3/v17rl27xuTkJIIgYDKZ6O7upre3FzhOx9TUFE6nEwCn08nU1BSJ
+      RIJCoaA769WrVzQ1NXHnzp0TfbLZLJcuXTr18lCnAYlEApfLhdVq1WpWqxWXy0UikajJKZVK
+      vHv3jv7+ft1L/hNms/lE3FVV5fz587pU/fz5k9XVVSYmJmqmbXt7m5s3b/7nHeoyIJvN4nA4
+      TtQdDgfZbLYmp1gsoigKyWSS+/fv43a78Xg8zMzMaBxRFFlcXCSVSgGQSqVYXFzE7/cjiiJw
+      bMjy8jKjo6O0tbXV7JVKpQiFQkiShNvt5t69e7x48UJnbl0z4P+gXC5TKpW4ffs2Y2NjWj2f
+      zxMMBpmenqa7uxubzYbFYgHAYrFgs9lIp9NUKhV+/fpFNBplbm6Oy5cvn9orFAoRCoV0tUQi
+      QSAQIBaLYbfb6zPAbrezvb19op5Op+no6KjJaWpqQhRFdnZ2dC/X3NyMw+Hg8PCQra0tZFmm
+      paUFAJvNhizLPHr0iN7eXj58+MDHjx8ZHBw8cf6tW7fo7+/nyZMnNfu3tLToZkJdBly/fp3X
+      r1+Ty+W0OZDL5fj+/Tt+v78mRxAEurq6WF1dRZIkbQ4cHByQyWRobm5GVVUaGhp0vIaGBqrV
+      KqqqMj4+zvj4uG59fX2dpaUlnj59iiiKqKpKuVxGEATdvr29ParVqjYz6poBnZ2dtLa2Eo1G
+      URQFRVGIRqO0trbS2dl5Km94eJivX7+ysrLC0dERiqKwvLzMlStXaG9vp6Ojg1gsRi6XA45N
+      jcViXLhw4dRk/Rv7+/tMTEzw/Plz8vk8lUqFb9++MT8/j9fr1dJVlwFms5lgMIggCPh8Pnw+
+      H4IgEAwGNYeLxSKBQIClpSWNd/XqVZ49e8bnz5/xer34fD4URUGWZcxmMxaLBVEUGRkZQZIk
+      RkZGEEWRhYUFbS78Dna7nWg0ypcvX7h79y5ut5uZmRmGhoZ06Tn3p/8X+AsZ9aJu79QoWQAA
+      AABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
