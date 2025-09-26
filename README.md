@@ -8,7 +8,8 @@ This repository stores documents of my capstone project like project timeline, r
 4. [Predictive Model Jupyter Notebook](/03-Analyse/Capstone%20-%20Patient%20Readmission%20Prediction%20Model.ipynb) : The Jupyter notebook to build the Logistic Regression predictive model to predict high-risk patients.
 5. [Predictive Model Deployment Jupyter Notebook](/03-Analyse/Capstone%20-%20Patient%20Readmission%20TabPy%20Deploy%20Script.ipynb) : The Jupyter notebook to deploy the Logistic Regression predictive model to TabPy server.
 6. [Guide to Integrate Predictive Model with Tableau](/03-Analyse/Guide%20-%20Integrating%20the%20Predictive%20Model%20with%20Tableau%20using%20TabPy.docx) : Guide on integrating the Logistic Regression predictive model with Tableau.
-7. [Capstone Presentation](/04-Communication/Capstone%20Presentation.pptx) : The presentation document of the analysis.
-8. [Technical Report](/04-Communication/Patient%20Readmission%20Analysis%20Technical%20Report.docx) : The technical report of the analysis.
-9. [Patient Readmission Dashboards](/04-Communication/Patient%20Readmission%20Dashboard.twbx) : The Tableau workbook containing the dashboards of the patient readmission analysis.
-10. [Patient Readmission Predictive Dashboards](/04-Communication/Patient%20Readmission%20Prediction%20Dashboard.twb) : The Tableau workbook containing the Predictive Model dashboard.
+7. [Storyboard Idea](/04-Communication/Storyboard%20Idea.PNG) : The storyboard idea for the presentation.
+8. [Capstone Presentation](/04-Communication/Capstone%20Presentation.pptx) : The presentation document of the analysis.
+9. [Technical Report](/04-Communication/Patient%20Readmission%20Analysis%20Technical%20Report.docx) : The technical report of the analysis.
+10. [Patient Readmission Dashboards](/04-Communication/Patient%20Readmission%20Dashboard.twbx) : The Tableau workbook containing the dashboards of the patient readmission analysis.
+11. [Patient Readmission Predictive Dashboards](/04-Communication/Patient%20Readmission%20Prediction%20Dashboard.twb) : The Tableau workbook containing the Predictive Model dashboard.
